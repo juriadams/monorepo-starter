@@ -1,5 +1,8 @@
 name: Validate
 
+env:
+  BUN_VERSION: 1.2.8
+
 on:
   push:
     branches: [ "main" ]
@@ -16,6 +19,8 @@ jobs:
 
       - name: Set up Bun
         uses: oven-sh/setup-bun@v1
+        with:
+          bun-version: ${{ env.BUN_VERSION }}
 
       - name: Install Dependencies
         run: bun install
@@ -32,6 +37,8 @@ jobs:
 
       - name: Set up Bun
         uses: oven-sh/setup-bun@v1
+        with:
+          bun-version: ${{ env.BUN_VERSION }}
 
       - name: Install Dependencies
         run: bun install
@@ -48,6 +55,8 @@ jobs:
 
       - name: Set up Bun
         uses: oven-sh/setup-bun@v1
+        with:
+          bun-version: ${{ env.BUN_VERSION }}
 
       - name: Install Dependencies
         run: bun install
@@ -64,6 +73,8 @@ jobs:
 
       - name: Set up Bun
         uses: oven-sh/setup-bun@v1
+        with:
+          bun-version: ${{ env.BUN_VERSION }}
 
       - name: Install Dependencies
         run: bun install
