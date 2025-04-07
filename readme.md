@@ -1,5 +1,9 @@
 # Monorepo
 
+[![Validate](https://github.com/juriadams/monorepo-starter/actions/workflows/validate.yml/badge.svg)](https://github.com/juriadams/monorepo-starter/actions/workflows/validate.yml)
+
+An opinionated yet lean monorepo starter template for building TypeScript projects with Bun, optimized for developer experience and velocity using Turborepo.
+
 ## Repository
 
 ### Packages
