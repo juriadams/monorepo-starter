@@ -24,7 +24,7 @@ jobs:
         run: bun run lint
 
   typecheck:
-    name: Type Check
+    name: Types
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repo

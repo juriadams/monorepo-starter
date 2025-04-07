@@ -14,7 +14,7 @@ bun run dev
 bun run build
 ```
 
-### Type Check
+### Types
 
 ```bash
 bun run typecheck
