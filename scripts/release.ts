@@ -1,1 +1,1 @@
-console.log("releasing...");
+console.info('releasing...');

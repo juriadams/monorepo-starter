@@ -7,6 +7,22 @@ on:
     branches: [ "main" ]
 
 jobs:
+  lint:
+    name: Lint
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v4
+
+      - name: Set up Bun
+        uses: oven-sh/setup-bun@v1
+
+      - name: Install Dependencies
+        run: bun install
+
+      - name: Lint Packages
+        run: bun run lint
+
   typecheck:
     name: Type Check
     runs-on: ubuntu-latest
