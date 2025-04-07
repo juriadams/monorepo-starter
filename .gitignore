@@ -1,3 +1,6 @@
+# turbo
+.turbo
+
 # dependencies (bun install)
 node_modules
 

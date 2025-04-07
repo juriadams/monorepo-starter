@@ -3,16 +3,18 @@
 	"type": "module",
 	"private": true,
 	"workspaces": ["packages/*"],
+	"packageManager": "bun@1.2.8",
 	"scripts": {
-		"dev": "bun --filter '*' dev",
-		"build": "bun --filter '*' build",
-		"typecheck": "bun --filter '*' typecheck",
-		"test": "bun --filter '*' test",
+		"dev": "turbo dev",
+		"build": "turbo build",
+		"typecheck": "turbo typecheck",
+		"test": "turbo test",
 		"release": "bun run scripts/release.ts"
 	},
 	"devDependencies": {
 		"@types/bun": "latest",
-		"tsup": "8.4.0"
+		"tsup": "8.4.0",
+		"turbo": "2.5.0"
 	},
 	"peerDependencies": {
 		"typescript": "^5"
