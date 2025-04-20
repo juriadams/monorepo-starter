@@ -1,4 +1,4 @@
-# `@monorepo/b`
+# `@monorepo/db`
 
 ## Lifecycle
 
@@ -6,6 +6,12 @@
 
 ```bash
 bun run dev
+```
+
+### Start
+
+```bash
+bun run start
 ```
 
 ### Build

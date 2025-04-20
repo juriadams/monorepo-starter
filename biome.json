@@ -52,7 +52,9 @@
       "correctness": {
         "all": true,
         "noUnusedImports": "warn",
-        "noUnusedVariables": "warn"
+        "noUnusedVariables": "warn",
+        "noUndeclaredDependencies": "off",
+        "useImportExtensions": "off"
       },
       "nursery": {
         "all": true,
@@ -60,7 +62,9 @@
         "useConsistentMemberAccessibility": "off",
         "noNestedTernary": "off",
         "noSecrets": "off",
-        "useExplicitType": "off"
+        "useExplicitType": "off",
+        "useComponentExportOnlyModules": "off",
+        "useImportRestrictions": "off"
       },
       "performance": {
         "all": true,

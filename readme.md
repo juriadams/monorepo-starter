@@ -8,8 +8,12 @@ An opinionated yet lean monorepo starter template for building TypeScript projec
 
 ### Packages
 
-- [`@monorepo/a`](/packages/a/readme.md)
-- [`@monorepo/b`](/packages/b/readme.md)
+- [`@monorepo/core`](/packages/core/readme.md)
+
+### Services
+
+- [`@monorepo/core`](/services/api/readme.md)
+- [`@monorepo/core`](/services/db/readme.md)
 
 ## Lifecycle
 

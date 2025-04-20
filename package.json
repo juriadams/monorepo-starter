@@ -2,10 +2,11 @@
   "name": "monorepo",
   "type": "module",
   "private": true,
-  "workspaces": ["packages/*"],
+  "workspaces": ["packages/*", "services/*"],
   "packageManager": "bun@1.2.8",
   "scripts": {
     "dev": "turbo dev",
+    "start": "turbo start",
     "build": "turbo build",
     "lint": "biome lint . && biome check .",
     "format": "biome lint --write . && biome format --write .",

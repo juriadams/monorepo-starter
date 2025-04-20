@@ -1,6 +1,7 @@
 import { defineConfig } from 'tsup';
 
 export default defineConfig(() => ({
+  external: ['bun'],
   clean: true,
   dts: true,
   format: 'esm',

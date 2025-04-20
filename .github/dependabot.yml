@@ -6,11 +6,16 @@ updates:
       interval: "weekly"
 
   - package-ecosystem: "bun"
-    directory: "packages/a"
+    directory: "packages/core"
     schedule:
       interval: "weekly"
 
   - package-ecosystem: "bun"
-    directory: "packages/b"
+    directory: "services/api"
+    schedule:
+      interval: "weekly"
+
+  - package-ecosystem: "bun"
+    directory: "services/db"
     schedule:
       interval: "weekly"

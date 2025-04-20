@@ -1,15 +1,18 @@
 {
-  "name": "@monorepo/a",
+  "name": "@monorepo/api",
   "module": "src/index.ts",
   "type": "module",
   "scripts": {
-    "dev": "tsup --watch",
+    "dev": "bun run --hot src/index.ts",
+    "start": "bun run dist/index.js",
     "build": "tsup",
     "typecheck": "tsc --noEmit",
     "test": "bun test"
   },
   "devDependencies": {
-    "@types/bun": "latest"
+    "@types/bun": "latest",
+    "elysia": "1.2.25",
+    "@monorepo/core": "workspace:*"
   },
   "peerDependencies": {
     "typescript": "^5"
