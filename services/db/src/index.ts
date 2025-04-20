@@ -30,10 +30,21 @@ const engine = new Engine({
   ],
 });
 
-new Server(
+const server = new Server(
   { engine },
   {
     port: Number(env.PORT || 3000),
     authValidator: env.DB_SECRET ? new StaticValidator([env.DB_SECRET]) : undefined,
   },
 ).start();
+
+console.info(
+  `[${new Date().toISOString()}] listening on http://localhost:${server.port}`,
+);
+
+process.on('SIGTERM', async () => {
+  await engine.stop();
+  server.stop();
+
+  process.exit(0);
+});
