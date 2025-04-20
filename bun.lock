@@ -25,7 +25,6 @@
     "services/api": {
       "name": "@monorepo/api",
       "devDependencies": {
-        "@monorepo/core": "workspace:*",
         "@types/bun": "latest",
         "elysia": "1.2.25",
       },
