@@ -14,7 +14,7 @@ COPY ./ /src
 # Remove any `.env` files that might have been copied over when building locally.
 RUN find /src -name "*.env" -type f -delete
 
-WORKDIR /src/services/db
+WORKDIR /src
 RUN bun install
 
 # ------------------------------------------------------------------------------
@@ -23,7 +23,7 @@ FROM install AS build
 
 COPY --from=install /src /src
 
-WORKDIR /src/services/api
+WORKDIR /src
 RUN bun run build
 
 # ------------------------------------------------------------------------------
