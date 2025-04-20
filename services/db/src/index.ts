@@ -1,8 +1,8 @@
 import { optional, vars } from '@monorepo/core/env';
 import { Engine } from '@ronin/engine';
+import { StaticValidator } from '@ronin/engine/auth';
 import { S3Resolver } from '@ronin/engine/resolvers/s3';
 import { Server } from '@ronin/engine/server';
-import { StaticValidator } from '@ronin/engine/auth';
 
 const env = vars([
   optional('PORT'),

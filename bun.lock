@@ -36,6 +36,7 @@
     "services/db": {
       "name": "@monorepo/db",
       "devDependencies": {
+        "@monorepo/core": "workspace:*",
         "@ronin/engine": "0.1.23",
         "@types/bun": "latest",
       },
