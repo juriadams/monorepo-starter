@@ -15,7 +15,7 @@
     "release": "bun run scripts/release.ts"
   },
   "devDependencies": {
-    "@biomejs/biome": "1.9.4",
+    "@biomejs/biome": "2.2.5",
     "@types/bun": "latest",
     "tsup": "8.4.0",
     "turbo": "2.5.0"
